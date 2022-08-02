@@ -1,3 +1,5 @@
+import { youtubeID } from "./funcionalidades.js";
+
 export function maisInfo(objeto){
     const div0 = document.querySelector(".maisInfo")
     const div = document.querySelector("#infoCard")
@@ -14,11 +16,11 @@ export function maisInfo(objeto){
 
     btnFechar.addEventListener("click", function(){div0.style.display = "none"})
 
-    titulo.innerHTML = objeto.titulo
+    titulo.innerHTML = "Título: " + objeto.titulo
     linguagem.innerHTML ="Linguagem: " + objeto.linguagem
     categoria.innerHTML ="Categoria: " + objeto.categoria
     descricao.innerHTML ="Descrição: " + objeto.descricao
-    video.src = objeto.video
+    video.src = "https://www.youtube.com/embed/" + youtubeID(objeto.video) 
     btnFechar.innerHTML = "&#x274C"
 
     div1.id = "tituloMaisInfo"

@@ -303,17 +303,19 @@ padding: 5px;
     background-color: #f8cc48;
     font-size: 1.2em;
     margin-top: 20px;
-    margin-left: 22%;
-    margin-right: 2%;
+    margin-right: 20px;
 }
 
 #tituloMaisInfo{
     display: flex;
     width: 100%;
-    justify-content: end;
+    justify-content: center;
 }
 #infoCard h1{
     color: #da4944;
+    width: 90%;
+    text-align: center;
+    font-size: 1.8em;
 }
 #infoCard h2{
     color: #233E54;
@@ -329,6 +331,7 @@ padding: 5px;
     margin-top: 20px;
     width: 90%;
     word-wrap: break-word;
+    margin-bottom: 20px;
 }
 #infoCard iframe{
     margin: 0;

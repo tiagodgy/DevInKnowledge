@@ -32,3 +32,9 @@ export function atulizaContadores(total, frontEnd, backEnd, FullStack, SoftSkill
   const cSoftSkill = document.querySelector("#contagemSoftSkill")
   cSoftSkill.innerHTML = SoftSkill
 }
+
+export function youtubeID(url){
+  var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+  var match = url.match(regExp);
+  return (match&&match[7].length==11)? match[7] : false;
+}
