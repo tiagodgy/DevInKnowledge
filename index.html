@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeVinKnowledge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Montserrat:ital,wght@0,100;1,300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+</head>
+<body>
+    <div id="menu">
+        <div class="divColuna">
+            <img src="logoDevInKnowledge.png" alt="Logo aqui" id="logo">
+            <h1 id="cabecalhoN1">DeVinKnowledge</h1>
+            <div class="dados">
+                <label for="titulo">Título</label>
+                <br>
+                <input type="text" id="titulo" placeholder="Ex. Funcionamento de uma div">
+            </div>
+            <div class="dados">
+                <label for="linguagem">Linguagem/Skill</label>
+                <br>
+                <input type="text" id="linguagem" placeholder="Ex. HTML e CSS">
+            </div>
+            <div class="dados">
+                <label for="categoria">Categoria</label>
+                <br>
+                <select name="select" id="categoria">
+                    <option value="FrontEnd">FrontEnd</option>
+                    <option value="BackEnd" >BackEnd</option>
+                    <option value="FullStack">FullStack</option>
+                    <option value="Comportamental/Soft">Comportamental/Soft</option>
+                </select>
+            </div>
+            <div class="dados">
+                <label for="descricao">Descrição</label>
+                <br>
+                <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Ex. Você pode adicinar uma div utilizando a tag html específica..."></textarea>
+            </div>
+            <div class="dados">
+                <label for="video">Vídeo do Youtube</label>
+                <br>
+                <input type="text" id="video" placeholder=" https://www.youtube.com/">
+            </div>
+            <div class="btnMenu">
+                <button id="btnLimpar">Limpar</button>
+                <button id="btnSalvar">Salvar</button>
+            </div>
+            <p id="mostraErro"></p>
+        </div>
+    </div>
+    <div id="lista">
+        <div id="contadores">
+            <div class="contador">
+                <h3>Total</h3>
+                <p id="contagemTotal">0</p>
+            </div>
+            <div class="contador">
+                <h3>FrontEnd</h3>
+                <p id="contagemFrontEnd">0</p>
+            </div>
+            <div class="contador">
+                <h3>BackEnd</h3>
+                <p id="contagemBackEnd">0</p>
+            </div>
+            <div class="contador">
+                <h3>FullStack</h3>
+                <p id="contagemFullStack">0</p>
+            </div>
+            <div class="contador">
+                <h3>SoftSkill</h3>
+                <p id="contagemSoftSkill">0</p>
+            </div>
+        </div>
+        <div id="pesquisa">
+            <input id="inputPesquisa" type="text" placeholder="Dígite um título para buscar...">
+            <button id="btnLimpaPesquisa">&#x274C;</button>
+        </div>
+        <div id="cards">
+            <div id="cardsInterno">
+                <div id="listaEsquerda">                        
+                </div>
+                <div id="listaDireita"> 
+                </div>
+                <div class="modal">
+                    <div id="modalCard">
+                    </div>
+                </div>
+                <div class="maisInfo">
+                    <div id="infoCard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="app.js" type="module"></script>
+</body>
+</html>

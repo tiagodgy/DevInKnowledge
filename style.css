@@ -1,0 +1,354 @@
+:root {
+    --primario: #233E54;
+    --secundario: #93c5e4;
+    --terceario: #da4944;
+    --quartenario: #f8cc48;
+    --quintenario: #ffffff;
+    --fonte: 'Poppins', sans-serif;
+}
+html, body{
+    min-height:100%;
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte);
+    display: flex;
+    background-color: var(--secundario);
+}
+#menu{
+    background-color: var(--primario);
+    position: sticky;
+    min-height: 100vh;
+    top: 0;
+    min-width: 300px;
+    color: var(--quintenario);
+}
+
+#cabecalhoN1{
+    font-family: 'Atma', cursive;
+    margin-top: -5px;
+    margin-bottom: -15px;
+    font-size: 2em;
+}
+
+.divColuna{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    margin-top: 2%;
+    width: 60%;
+}
+
+.dados{
+    margin-top: 20px;
+    width: 90%;
+}
+
+.dados input{
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 100%;
+    font-family: var(--fonte);
+}
+
+.dados select{
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 100%;
+    font-family: var(--fonte);
+    text-align: center;
+}
+
+.dados textarea{
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-size: 100%;
+    font-family: var(--fonte);
+}
+
+.btnMenu{
+    display: flex;
+    margin-top: 20px;
+}
+
+#btnLimpar{
+    margin: 10px;
+    font-family: var(--fonte);
+    font-size: 100%;
+    border-radius: 15px;
+    border: none;
+    width: 100px;
+    background-color: var(--terceario);
+    color: black;
+}
+
+#btnSalvar{
+    margin: 10px;
+    font-family: var(--fonte);
+    font-size: 100%;
+    border-radius: 15px;
+    border: none;
+    width: 100px;
+    background-color: var(--quartenario);
+    color: black;
+}
+
+#lista{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 70%;
+}
+#contadores{
+display: flex;
+justify-content: center;
+padding: 5px;
+}
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 5px 10px var(--primario);
+
+}
+.contador p{
+    font-size: 2em;
+    margin-top: -15px;
+}
+
+#pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pesquisa input{
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 100%;
+    font-family: var(--fonte);
+    margin-right: 5px;
+}
+
+#btnPesquisar{
+    font-family: var(--fonte);
+    font-size: 100%;
+    border: solid black 1px;
+    width: 100px;
+    background-color: var(--quartenario);
+}
+#btnLimpaPesquisa{
+    font-family: var(--fonte);
+    font-size: 100%;
+    border: solid black 1px;
+    width: 100px;
+    background-color: var(--quartenario);
+}
+
+#cards{
+    margin-top: 20px;
+    height: 75vh;
+    border: solid black 1px;
+    border-radius: 30px;
+}
+
+#cardsInterno{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    margin: 20px;
+    height: 90%;
+}
+
+#cardsInterno::-webkit-scrollbar {
+    width: 0.2em;
+    margin-right: 5px;
+}
+ 
+#cardsInterno::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+#cardsInterno::-webkit-scrollbar-thumb {
+  background-color: var(--quartenario);
+  outline: 1px solid var(--quartenario);
+}
+
+#listaEsquerda{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 45%;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+#listaDireita{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 45%;
+    align-items: flex-start;
+}
+
+.cartao{
+    background-color: var(--quintenario);
+    border-radius: 20px;
+    box-shadow: 5px 10px var(--primario);
+    margin-top: 20px;
+    width: 100%;
+    word-wrap: break-word;
+
+}
+.cartao h1{
+    text-align: center;
+    color: var(--primario);
+    font-size: 1.5em;
+}
+.cartao h3{
+    margin-left: 10px;
+}
+.cartao p{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    color: var(--primario);
+}
+.btnsCartao{
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.btnsCartao button{
+    font-size: 1.3em;
+    border-radius: 100%;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: var(--primario);
+    border: none;
+    margin-right: 2px;
+}
+
+#mostraErro{
+    color: var(--terceario);
+    word-wrap: break-word;
+    max-width: 250px;
+    text-align: center;
+}
+
+.spanStyleCard{
+    color: var(--terceario);
+}
+
+.modal{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: var(--primario);
+    width: 60vw;
+    height: 8vh;
+    box-shadow: 0px 0px 10px var(--primario);
+    display: none;
+    border-radius: 50px;
+}
+
+#modalCard{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    color: var(--quintenario);
+}
+
+.maisInfo{
+    position: fixed;
+    background-color: var(--quintenario);
+    box-shadow: 0px 0px 10px var(--primario);
+    display: none;
+    max-width: 50vw;
+    min-width: 50vw;
+    height: fit-content;
+    max-height: 70vh;
+    overflow-y:auto;
+    border-radius: 20px;
+}
+
+#infoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infoCard button{
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    border: none;
+    background-color: #f8cc48;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 22%;
+    margin-right: 2%;
+}
+
+#tituloMaisInfo{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+#infoCard h1{
+    color: #da4944;
+}
+#infoCard h2{
+    color: #233E54;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+#infoCard p{
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    word-wrap: break-word;
+}
+#infoCard iframe{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    height: 250px;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.maisInfo::-webkit-scrollbar {
+    width: 0.2em;
+    margin-right: 5px;
+}
+ 
+.maisInfo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.maisInfo::-webkit-scrollbar-thumb {
+  background-color: var(--quartenario);
+  outline: 1px solid var(--quartenario);
+}
